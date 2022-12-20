@@ -3,15 +3,11 @@ import 'package:flutter_antonx_boilerplate/core/enums/view_state.dart';
 import 'package:flutter_antonx_boilerplate/core/models/body/signup_body.dart';
 import 'package:flutter_antonx_boilerplate/core/models/responses/auth_response.dart';
 import 'package:flutter_antonx_boilerplate/core/others/base_view_model.dart';
-import 'package:flutter_antonx_boilerplate/core/services/auth_service.dart';
 import 'package:flutter_antonx_boilerplate/core/services/file_picker_service.dart';
-import 'package:flutter_antonx_boilerplate/ui/custom_widgets/dialogs/auth_dialog.dart';
-import 'package:get/get.dart';
 
 import '../../../../locator.dart';
 
 class SignUpViewModel extends BaseViewModel {
-  final AuthService _authService = locator<AuthService>();
   final FilePickerService _imagePickerService = locator<FilePickerService>();
   int? selectedGenderIndex;
   SignUpBody signUpBody = SignUpBody();

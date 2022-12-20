@@ -73,12 +73,12 @@ class FABBottomAppBarState extends State<FABBottomAppBar> {
           elevation: 0.0,
           shape: widget.notchedShape,
           notchMargin: 4.0,
+          color: widget.backgroundColor,
           child: Row(
             mainAxisSize: MainAxisSize.max,
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: items,
           ),
-          color: widget.backgroundColor,
         ),
       ),
     );

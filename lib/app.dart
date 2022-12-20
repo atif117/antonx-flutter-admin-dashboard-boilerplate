@@ -37,48 +37,8 @@ class MyApp extends StatelessWidget {
             theme: theme,
             darkTheme: darkTheme,
             debugShowCheckedModeBanner: false,
-            home: SplashScreen(),
+            home: const SplashScreen(),
           ),
         ));
-
-    // AdaptiveTheme(
-    //   light: ThemeData.light().copyWith(
-    //     scaffoldBackgroundColor: creamColor,
-    //     textTheme: GoogleFonts.poppinsTextTheme(Theme.of(context).textTheme)
-    //         .apply(bodyColor: Colors.black),
-    //     canvasColor: snowColor,
-    //   ),
-    //   dark: ThemeData.dark().copyWith(
-    //     scaffoldBackgroundColor: bgColor,
-    //     textTheme: GoogleFonts.poppinsTextTheme(Theme.of(context).textTheme)
-    //         .apply(bodyColor: Colors.white),
-    //     canvasColor: secondaryColor,
-    //   ),
-    //   initial: AdaptiveThemeMode.light,
-    //   builder: (theme, darkTheme) => GetMaterialApp(
-    //     title: title,
-    //     theme: theme,
-    //     darkTheme: darkTheme,
-    //     debugShowCheckedModeBanner: false,
-    //     home: MultiProvider(
-    //       providers: [
-    //         ChangeNotifierProvider(
-    //           create: (context) => MenuController(),
-    //         ),
-    //       ],
-    //       child: MainScreen(),
-    //     ),
-    //   ),
-    // );
-
-    //   ScreenUtilInit(
-    //     designSize: const Size(375, 812),
-    //     builder: (context, widget) => GetMaterialApp(
-    //       translations: LocalizationService(),
-    //       locale: const Locale("en"),
-    //       title: title,
-    //       home: const SplashScreen(),
-    //     ),
-    //   );
   }
 }

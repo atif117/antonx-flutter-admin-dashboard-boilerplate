@@ -68,14 +68,14 @@ class SignUpScreen extends StatelessWidget {
                                       /// User profile Avatar
                                       if (model.signUpBody.image != null)
                                         ClipRRect(
+                                          borderRadius:
+                                              BorderRadius.circular(200),
                                           child: Image.file(
                                             model.signUpBody.image!,
                                             height: 141,
                                             width: 141,
                                             fit: BoxFit.cover,
                                           ),
-                                          borderRadius:
-                                              BorderRadius.circular(200),
                                         )
                                       else
                                         const ImageContainer(

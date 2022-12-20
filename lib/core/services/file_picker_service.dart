@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:heic_to_jpg/heic_to_jpg.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:logger/logger.dart';
+// ignore: depend_on_referenced_packages
 import 'package:path/path.dart' as p;
 
 class FilePickerService {
@@ -31,6 +32,7 @@ class FilePickerService {
 
   pickImageWithoutCompression() async {
     File? selectedImage;
+    // ignore: no_leading_underscores_for_local_identifiers
     final _filePicker = FilePicker.platform;
     FilePickerResult? result = await _filePicker.pickFiles(
       type: FileType.image,

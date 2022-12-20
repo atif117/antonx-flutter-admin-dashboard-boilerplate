@@ -31,7 +31,7 @@ List demoMyFiles = [
     numOfFiles: 1328,
     svgSrc: "$staticAsset/google_drive.svg",
     totalStorage: "2.9GB",
-    color: Color(0xFFFFA113),
+    color: const Color(0xFFFFA113),
     percentage: 35,
   ),
   CloudStorageInfo(
@@ -39,7 +39,7 @@ List demoMyFiles = [
     numOfFiles: 1328,
     svgSrc: "$staticAsset/one_drive.svg",
     totalStorage: "1GB",
-    color: Color(0xFFA4CDFF),
+    color: const Color(0xFFA4CDFF),
     percentage: 10,
   ),
   CloudStorageInfo(
@@ -47,7 +47,7 @@ List demoMyFiles = [
     numOfFiles: 5328,
     svgSrc: "$staticAsset/drop_box.svg",
     totalStorage: "7.3GB",
-    color: Color(0xFF007EE5),
+    color: const Color(0xFF007EE5),
     percentage: 78,
   ),
 ];

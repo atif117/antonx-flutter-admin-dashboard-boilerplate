@@ -94,7 +94,7 @@ class LoginScreen extends StatelessWidget {
                           onTap: () {
                             if (_formKey.currentState!.validate()) {
                               Get.to(
-                                MainScreen(),
+                                const MainScreen(),
                               );
                             }
                           },

@@ -26,6 +26,7 @@ class Chart extends StatelessWidget {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
+                // ignore: prefer_const_constructors
                 SizedBox(height: defaultPadding),
                 Text(
                   "29.1",
@@ -34,7 +35,7 @@ class Chart extends StatelessWidget {
                       .bodyText1!
                       .copyWith(fontWeight: FontWeight.bold, fontSize: 30),
                 ),
-                Text("of 128GB")
+                const Text("of 128GB")
               ],
             ),
           ),
@@ -52,19 +53,19 @@ List<PieChartSectionData> paiChartSelectionDatas = [
     radius: 25,
   ),
   PieChartSectionData(
-    color: Color(0xFF26E5FF),
+    color: const Color(0xFF26E5FF),
     value: 20,
     showTitle: false,
     radius: 22,
   ),
   PieChartSectionData(
-    color: Color(0xFFFFCF26),
+    color: const Color(0xFFFFCF26),
     value: 10,
     showTitle: false,
     radius: 19,
   ),
   PieChartSectionData(
-    color: Color(0xFFEE2727),
+    color: const Color(0xFFEE2727),
     value: 15,
     showTitle: false,
     radius: 16,

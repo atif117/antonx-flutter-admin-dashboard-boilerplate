@@ -1,3 +1,5 @@
+// ignore_for_file: library_private_types_in_public_api
+
 import 'package:connectivity_plus/connectivity_plus.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_antonx_boilerplate/core/models/other_models/onboarding.dart';
@@ -65,12 +67,13 @@ class _SplashScreenState extends State<SplashScreen> {
     ///
     log.d('@_initialSetup. Login State: ${_authService.isLogin}');
     if (_authService.isLogin) {
-      Get.off(() => MainScreen());
+      Get.off(() => const MainScreen());
     } else {
       Get.off(() => LoginScreen());
     }
   }
 
+  // ignore: unused_element
   Future<List<Image>> _preCacheOnboardingImages(
       List<Onboarding> onboardingList) async {
     List<Image> preCachedImages =
